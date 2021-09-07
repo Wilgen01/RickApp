@@ -1,0 +1,11 @@
+<ul class="nav justify-content-center bg-white">
+    <li class="nav-item">
+      <img routerLink="/" src="assets/logo.png" alt="" class="img-fluid pointer">
+    </li>
+</ul>
+<div class=" bg-white sticky-top">
+    <div class="d-flex py-3 container">
+      <input  #texto (keyup.enter)="buscar(texto.value)" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button (click)="buscar(texto.value)" class="btn btn-outline-success" type="button">Search</button>
+    </div>
+</div>

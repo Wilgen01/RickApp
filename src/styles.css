@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.fixed-bottom:hover{
+    transform: scale(1.2);
+}
+
+.fixed-bottom{
+    left: auto !important;
+}
+
+.image-h{
+    height: 100%;
+}
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

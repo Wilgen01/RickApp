@@ -1,0 +1,26 @@
+<app-nav-bar></app-nav-bar>
+<app-cards [personajes]="personajes"></app-cards>
+<div *ngIf="!cargando" class="mt-3 d-flex justify-content-center">
+    <nav aria-label="Page navigation example ">
+        <ul class="pagination">
+            <li (click)="paginaAnterior(page)" class="page-item">
+                <a class="page-link pointer"  aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li (click)="cambiarPagina(page)" class="page-item pointer"><a class="page-link" >{{page}}</a></li>
+            <li (click)="cambiarPagina(page+1)" class="page-item pointer"><a class="page-link">{{page+1}}</a></li>
+            <li (click)="cambiarPagina(page+2)" class="page-item pointer"><a class="page-link">{{page+2}}</a></li>
+            <li (click)="cambiarPagina(page+3)" class="page-item pointer"><a class="page-link">{{page+3}}</a></li>
+            <li (click)="paginasiguiente(page)" class="page-item pointer">
+                <a class="page-link pointer"  aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<img *ngIf="err" src="assets/404.svg" style="width: 100%;" alt="">
+<i routerLink="/favoritos" class="bi bi-bookmark-heart-fill display-1 d-inline fixed-bottom pointer "></i>
+
